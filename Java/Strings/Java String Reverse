@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        char arr[] = new char[A.length()];
+        for(int i = A.length()-1, j = 0; i >= 0; i--, j++){
+            arr[i] = A.charAt(j);
+        }
+        String B = String.valueOf(arr);
+        if(A.compareTo(B)==0){
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
